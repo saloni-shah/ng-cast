@@ -4,8 +4,9 @@ angular.module('video-player')
   bindings: {
     videos: '<'
   },
-  controller: function(){
+  controller: function() {
     //console.log(this);
+    this.handleClick;
   },
   templateUrl: '../src/templates/videoList.html'
 });
