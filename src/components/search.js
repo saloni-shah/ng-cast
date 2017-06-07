@@ -6,10 +6,12 @@ angular.module('video-player')
   },
   controller: function(youTube) {
     this.search = () => {
-      //console.log('hi', this.update);
       youTube.searchlive(this.input, this.update);
-      //
     };
+    // this.search = function(){
+    //   console.log(this);
+    //   youTube.searchlive(this.input, this.update);
+    // };
   },
   templateUrl: 'src/templates/search.html'
 });
