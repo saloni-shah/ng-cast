@@ -7,7 +7,7 @@ angular.module('video-player')
     handleClick: '<'
   },
   controller: function() {
-    console.log(this);
+    //console.log(this);   
   },
   templateUrl: '../src/templates/videoList.html'
 });

@@ -7,6 +7,10 @@ angular.module('video-player')
     this.handleClick = (video) => {
       this.video = video;
     };
+    this.update = (videos) => {
+      this.videos = videos;
+      this.video = videos[0];
+    };
   },
   templateUrl: '../src/templates/app.html'
 });
