@@ -1,5 +1,5 @@
 angular.module('video-player')
-.service('youTube', function($http){
+.service('youTube', function($http) {
   // TODO
   this.searchlive = function(searchVal, callback) {
     $http.get('https://www.googleapis.com/youtube/v3/search', {
@@ -11,11 +11,11 @@ angular.module('video-player')
         q: searchVal
       }
     }).then( function (data) {
-      console.log("successs");
+      console.log('successs');
       //console.log(data.data.items);
       callback(data.data.items);
     }, function () {
-      console.log("error");
+      console.log('error');
     });
   };
 });
